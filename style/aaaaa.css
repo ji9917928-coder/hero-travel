@@ -7,28 +7,33 @@
 
 .container{
     max-width:1250px;
-    margin:0 auto
+    margin:0 auto;
 }
-nav>div>img{
+img{
+    width: 100%;
+}
+nav > div > img{
     width: 50px;
     height: 50px;
 }
-nav>div>h2{
+nav > div > h2{
     font-size: 42px;
-}
-nav>ul>li a{
+} 
+nav > ul >li a{
     color: #424247;
     font-weight: 700;
     
-    text-decoration: none;;
-
+    text-decoration: none;
 }
-nav>ul>li{
+nav .hamburger{
+    display: none;
+}
+nav > ul > li{
     
     margin-right: 30px;
     list-style: none;
 }
-nav>ul{
+nav > ul{
     display: flex;
 }
 .travel{
@@ -54,20 +59,122 @@ nav>div{
     border-radius: 15px;
     text-align: center;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
     display: flex;
     width: 100%;
     gap: 14px;
     color: white;
 }
-.explore> p{
+.explore > p{
     max-width: 600px;
 }
 .explore> h1{
     font-size: 4rem;
     font-weight: 800;
 
+}
+.banner > div{
+    display: flex;
+     flex-direction: column;
+     gap: 15px;
+}
+form>input,select{
+   padding: 12px 16px;
+    border-radius: 15px;
+    border: none;
+    font-weight: 600;
+    color: #131318;
+    border: none;
+    outline: none;
+
+}
+.find-btn{
+    padding: 12px 20px ;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    background-color: #FF5400;
+    font-weight: 600;
+}
+.banner > div >form{
+ background-color: rgba(255, 255, 255, 0.507);
+ padding: 12px;
+ gap: 15px;
+ display: flex;
+  
+ justify-content: space-between;
+ border-radius: 15px;
+}
+main >  .popular-contant{
+    margin-top: 120px;
+}
+/* popular section  */
+
+.dsscription{
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.dsscription > ul li{
+    padding-bottom: 16px;
+}
+.dsscription > button{
+    margin-top: 8px;
+}
+.dsscription >h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.popular-contant{
+    display: flex;
+    gap: 53px;
+}
+.width{
+   max-width: 530px;
+}
+.line-height{
+    line-height: 26px;
+}
+.popular-contant .dsscription > button{
+    width: fit-content;
+}
+.popular-contant .dsscription{
+    max-width: 577px;
+}
+.popular-contant{
+    justify-content: center;
+}
+.popular-contant > div > img{
+    max-width: 540px;
+    min-height: 550px;
+}
+
+
+
+
+
+
+
+
+
+/* responsive degiend  */
+@media screen and (max-width:1250px){
+    .container{
+        max-width: 92%;
+        margin: auto;
+    }
+}
+@media screen and (max-width:768px){
+    .banner>div>form,.popular-contant{
+        flex-direction: column;
+    }
+    nav .hamburger{
+        display: block;
+    }
+    nav > ul{
+        display: none;
+    }
 }
 
 
